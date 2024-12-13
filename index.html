@@ -1,41 +1,79 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Attributes</title>
-</head>
-<body>
-    <table border="2" style="border: 2px solid darkorange;" width="340px">
-        <tr>
-            <th colspan="2" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Character Stats</th>
-        </tr>
-        <tr>
-            <td >Username: <b style="color: red;"><u>Tarnished Warrior</b></td>
-            <th>Attribute Points</th>
-        </tr>
-        <tr>
-            <td style="color: red"><i>Strength</td>
-            <td style="text-align: center;">34</td>
-        </tr>
-        <tr>
-            <td style="color: darkorchid"><i>Intelligence</td>
-            <td style="text-align: center;">45</td>
-        </tr>
-        <tr>
-            <td style="color: green;"><i>Dexterity</td>
-            <td style="text-align: center;">21</td>
-        </tr>
-        <td style="color: gold;"><i>Endurance</td>
-        <td style="text-align: center;">50</td>
-        <tr>
-            <td style="color: yellow;"><i>Faith</td>
-            <td style="text-align: center;">15</td>
-        </tr>
-        <tr>
-            <td style="color: cyan;"><i>Arcane</td>
-            <td style="text-align: center;">15</td>
-        </tr>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Form</title>
+  </head>
+  <body>
+    <table border="2" style="border: 2px solid darkorange" width="340px">
+      <tr>
+        <th
+          colspan="2"
+          style="font-family: Verdana, Geneva, Tahoma, sans-serif"
+        >
+          Character Stats
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Username: <b style="color: red"><u>Tarnished Warrior</u></b>
+        </td>
+        <th>Attribute Points</th>
+      </tr>
+      <tr>
+        <td style="color: red"><i>Strength</i></td>
+        <td style="text-align: center">34</td>
+      </tr>
+      <tr>
+        <td style="color: darkorchid"><i>Intelligence</i></td>
+        <td style="text-align: center">45</td>
+      </tr>
+      <tr>
+        <td style="color: green"><i>Dexterity</i></td>
+        <td style="text-align: center">21</td>
+      </tr>
+      <td style="color: gold"><i>Endurance</i></td>
+      <td style="text-align: center">50</td>
+      <tr>
+        <td style="color: yellow"><i>Faith</i></td>
+        <td style="text-align: center">15</td>
+      </tr>
+      <tr>
+        <td style="color: cyan"><i>Arcane</i></td>
+        <td style="text-align: center">15</td>
+      </tr>
     </table>
-</body>
+    <br />
+    <br />
+
+    <h2>Contact Us</h2>
+
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="2" required></textarea>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+
+      <br />
+      <br />
+      <h3>Our Site</h3>
+      <a href="https://www.facebook.com/" target="_blank">
+        <input type="image" src="facebook.png" width="50" />
+      </a>
+    </form>
+  </body>
 </html>
