@@ -5,75 +5,60 @@
     <title>Simple HTML Form</title>
   </head>
   <body>
-    <table border="2" style="border: 2px solid darkorange" width="340px">
-      <tr>
-        <th
-          colspan="2"
-          style="font-family: Verdana, Geneva, Tahoma, sans-serif"
-        >
-          Character Stats
-        </th>
-      </tr>
-      <tr>
-        <td>
-          Username: <b style="color: red"><u>Tarnished Warrior</u></b>
-        </td>
-        <th>Attribute Points</th>
-      </tr>
-      <tr>
-        <td style="color: red"><i>Strength</i></td>
-        <td style="text-align: center">34</td>
-      </tr>
-      <tr>
-        <td style="color: darkorchid"><i>Intelligence</i></td>
-        <td style="text-align: center">45</td>
-      </tr>
-      <tr>
-        <td style="color: green"><i>Dexterity</i></td>
-        <td style="text-align: center">21</td>
-      </tr>
-      <td style="color: gold"><i>Endurance</i></td>
-      <td style="text-align: center">50</td>
-      <tr>
-        <td style="color: yellow"><i>Faith</i></td>
-        <td style="text-align: center">15</td>
-      </tr>
-      <tr>
-        <td style="color: cyan"><i>Arcane</i></td>
-        <td style="text-align: center">15</td>
-      </tr>
-    </table>
-    <br />
-    <br />
+ 
 
-    <h2>Contact Us</h2>
+    <h1>Application Form</h1>
 
     <form>
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <br />
+      <label for="fname">First Name:</label>
+      <input type="text" name="name" value="" required />
 
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <br />
-
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="2" required></textarea>
-      </div>
-      <br />
-      <button type="submit">Submit</button>
+      <label for="lname">Last Name:</label>
+      <input type="text" name="name" value="" required />
 
       <br />
       <br />
-      <h3>Our Site</h3>
-      <a href="https://www.facebook.com/" target="_blank">
-        <input type="image" src="facebook.png" width="50" />
-      </a>
+      <label for="birthday">Date of Birth:</label>
+      <input type="date" name="date" />
+      <label for="Age">Age:</label>
+      <input type="number" name="date" required />
+      <br />
+      <br />
+      <label for="Gender">Gender</label>
+      <select name="Gender" id="">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        name="email"
+        id=""
+        placeholder="Enter Email Address"
+      />
+      <br />
+      <br />
+      <label for="Position">Positions Available:</label>
+      <label> <input type="radio" name="position" />Junior Developer </label>
+      <label> <input type="radio" name="position" />Mid-level Developer </label
+      ><label> <input type="radio" name="position" />Senior Developer </label>
+      <br>
+      <br>
+      <label for="Languages">Programming Languages:
+        <label><input type="checkbox" name="lang">Java</label>
+        <label><input type="checkbox" name="lang">JavaScript</label>
+        <label><input type="checkbox" name="lang">Python</label>
+      </label>
+      <br />
+      <br />
+      <label for="pass">Password:</label>
+      <input type="text" name="pass">
+      <label for="pass">Confirm Password:</label>
+      <input type="text" name="pass">
+      <br>
+      <br>
+      <input type="submit">
+      <input type="reset">
     </form>
   </body>
 </html>
